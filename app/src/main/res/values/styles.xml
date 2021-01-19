@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="Formula" parent="MyTextView">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="Result" parent="MyTextView">
+        <item name="android:layout_weight">9</item>
+        <item name="android:textSize">85sp</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="layout_gravity">fill</item>
+        <item name="layout_rowWeight">1</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+    <style name="MyButton.Arithmetic" parent="MyButton">
+        <item name="backgroundTint">@color/primaryColorVariant</item>
+    </style>
+    <style name="MyButton.Additional" parent="MyButton">
+        <item name="backgroundTint">@color/secondaryColor</item>
+    </style>
+    <style name="MyButton.Result" parent="MyButton">
+        <item name="backgroundTint">@color/secondaryColorVariant</item>
+    </style>
+</resources>
