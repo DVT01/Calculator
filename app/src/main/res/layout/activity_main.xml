@@ -22,7 +22,7 @@
             style="@style/Formula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="1+1" />
+            tools:text="1-1" />
 
         <TextView
             android:id="@+id/result"
@@ -41,6 +41,7 @@
         app:layout_constraintGuide_percent="0.25"/>
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/buttons_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:columnCount="4"
@@ -51,82 +52,103 @@
         app:rowCount="5">
 
         <Button
+            android:id="@+id/clear"
             style="@style/MyButton.Additional"
             android:text="C" />
 
         <Button
+            android:id="@+id/parenthesis"
             style="@style/MyButton.Additional"
             android:text="()" />
 
         <Button
+            android:id="@+id/backspace"
             style="@style/MyButton.Additional"
-            android:text="%" />
+            android:foreground="@drawable/backspace"
+            android:foregroundGravity="center"/>
 
         <Button
+            android:id="@+id/division"
             style="@style/MyButton.Arithmetic"
-            android:text="÷" />
+            android:text="/" />
 
         <Button
+            android:id="@+id/number_seven"
             style="@style/MyButton"
             android:text="7" />
 
         <Button
+            android:id="@+id/number_eight"
             style="@style/MyButton"
             android:text="8" />
 
         <Button
+            android:id="@+id/number_nine"
             style="@style/MyButton"
             android:text="9" />
 
         <Button
+            android:id="@+id/multiplication"
             style="@style/MyButton.Arithmetic"
-            android:text="x" />
+            android:text="*" />
 
         <Button
+            android:id="@+id/number_four"
             style="@style/MyButton"
             android:text="4" />
 
         <Button
+            android:id="@+id/number_five"
             style="@style/MyButton"
             android:text="5" />
 
         <Button
+            android:id="@+id/number_six"
             style="@style/MyButton"
             android:text="6" />
 
         <Button
+            android:id="@+id/subtraction"
             style="@style/MyButton.Arithmetic"
             android:text="-" />
 
         <Button
+            android:id="@+id/number_one"
             style="@style/MyButton"
             android:text="1" />
 
         <Button
+            android:id="@+id/number_two"
             style="@style/MyButton"
             android:text="2" />
 
         <Button
+            android:id="@+id/number_three"
             style="@style/MyButton"
             android:text="3" />
 
         <Button
+            android:id="@+id/addition"
             style="@style/MyButton.Arithmetic"
             android:text="+" />
 
         <Button
-            style="@style/MyButton.Arithmetic"
-            android:text="+/-" />
+            android:id="@+id/positive_negative"
+            style="@style/MyButton"
+            android:text="00" />
 
         <Button
+            android:id="@+id/number_zero"
             style="@style/MyButton"
             android:text="0" />
 
         <Button
-            style="@style/MyButton.Arithmetic"
+            android:id="@+id/decimal"
+            style="@style/MyButton"
             android:text="." />
 
         <Button
+            android:id="@+id/total"
             style="@style/MyButton.Result"
             android:text="=" />
 
