@@ -8,11 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+
     <color name="primaryColor">#0F8B8D</color>
     <color name="primaryColorVariant">#143642</color>
-    <color name="secondaryColor">#634133</color>
+    <color name="secondaryColor">#96194B</color>
     <color name="secondaryColorVariant">#A8201A</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#000000</color>
-    <color name="textBackground">#DAD2D8</color>
+    <color name="primaryTextColor">@color/white</color>
+    <color name="secondaryTextColor">@color/black</color>
+    <color name="textBackground">@color/white</color>
 </resources>
